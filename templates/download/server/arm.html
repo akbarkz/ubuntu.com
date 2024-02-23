@@ -34,9 +34,10 @@
     <div class="col-6 p-card is-divided">
       <h3 class="p-card__title">Ubuntu Server</h3>
       <div class="p-card__content">
-        <p>
-          This is the default iso image of the Ubuntu Server installer.
-        </p>
+          <p class="u-sv3">
+            This is the default iso image of the Ubuntu Server installer.
+          </p>
+
         <p>
           <a href="https://cdimage.ubuntu.com/releases/{{ releases.lts.short_version }}/release/ubuntu-{{ releases.lts.full_version }}-live-server-arm64.iso" class="p-button--positive is-wide" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Download', 'eventAction' : 'ARM server download', 'eventLabel' : '{{ releases.lts.short_version }}', 'eventValue' : undefined });">
             Download {{ releases.lts.full_version }} <abbr title="Long-term support">LTS</abbr>
@@ -49,6 +50,7 @@
           </a>
         </p>
         {% endif %}
+
         <p>
           <a href="/download/alternative-downloads">Alternative and previous releases&nbsp;&rsaquo;</a>
           &nbsp;&nbsp;
